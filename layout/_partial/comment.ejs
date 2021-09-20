@@ -1,0 +1,20 @@
+<% if (theme.valine && post.comments) { %>
+<div id="vcomments"></div>
+<script>
+  window.onload = function(){
+      var valine = new Valine();
+      valine.init({
+        el: '#vcomments',
+        appId: "<%= theme.v_appId %>",
+        appKey: "<%= theme.v_appKey %>",
+        enableQQ: "<%= theme.v_enableQQ %>",
+        recordIP: "<%= theme.v_recordIP %>",
+        pageSize: "<%= theme.v_pageSize%>",
+        visitor: "<%= theme.v_visitor%>",
+        path: window.location.pathname,
+        placeholder: "人一生总会遇见惊喜 ...",
+        avatar: 'monsterid'
+      })
+  }
+</script>
+<% } %>

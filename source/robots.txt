@@ -1,0 +1,13 @@
+User-agent: msnbot-media
+Disallow: /
+Allow: /th?
+
+User-agent: *
+Disallow: /archives/
+Disallow: /bangumi/
+Disallow: /music/
+Disallow: /comment/
+Disallow: /about/
+Disallow: /theme-sakura/
+Disallow: /links/
+Disallow: /donate/
